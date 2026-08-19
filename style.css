@@ -1,0 +1,213 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   TÍTULO PRINCIPAL
+========================= */
+
+.titulo {
+    text-align: center;
+    color: #2563eb;
+    font-size: 42px;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   SUBTÍTULO
+========================= */
+
+.sub-titulo {
+    text-align: center;
+    color: #475569;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   IMAGENS DOS PRODUTOS
+========================= */
+
+.celular,
+.relogio,
+.ps5 {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+
+    background-color: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* =========================
+   TAMANHO DAS IMAGENS
+========================= */
+
+.celular {
+    width: 300px;
+    height: 300px;
+}
+
+.relogio {
+    width: 300px;
+    height: 300px;
+}
+
+.ps5 {
+    width: 320px;
+    height: 320px;
+}
+
+
+/* =========================
+   EFEITO AO PASSAR O MOUSE
+========================= */
+
+.celular:hover,
+.relogio:hover,
+.ps5:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.20);
+}
+
+
+/* =========================
+   NOME DOS PRODUTOS
+========================= */
+
+body > h3 {
+    text-align: center;
+
+    color: #0f172a;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   BOTÃO DO CARRINHO
+========================= */
+
+button {
+    border: none;
+    background: none;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    position: absolute;
+
+    top: 25px;
+    right: 30px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================
+   IMAGEM DO CARRINHO
+========================= */
+
+.carrinho {
+    width: 38px;
+    height: 38px;
+
+    object-fit: contain;
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================
+   EFEITO DO CARRINHO
+========================= */
+
+button:hover {
+    background-color: #e0e7ff;
+
+    transform: scale(1.08);
+}
+
+button:hover .carrinho {
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+    .titulo {
+        font-size: 30px;
+        margin-top: 35px;
+    }
+
+    .sub-titulo {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    .celular,
+    .relogio,
+    .ps5 {
+        width: 85%;
+        max-width: 320px;
+        height: 280px;
+    }
+
+    body > h3 {
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
+
+    button {
+        top: 15px;
+        right: 15px;
+    }
+}
